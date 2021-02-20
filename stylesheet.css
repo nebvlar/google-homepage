@@ -4,32 +4,33 @@ body{
     color: black;
     background-color: white;
     min-width: 400px;
+    
 }
-ul{
+#header ul{
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
-li{
+#header li{
     display: inline;
 }
-nav a{
+#header nav a{
     display: inline-block;
     color: black;
     padding: 12px 12px;
     text-decoration: none;
 }
-nav a:hover{
+#header nav a:hover{
     text-decoration: underline;
 }
-nav svg{
+#header nav svg{
     display: inline-block;
     height: 25px;
     width: 25px;
     color: #5f6368;
     fill: currentColor;
 }
-nav svg:hover{
+#header nav svg:hover{
     background-color: #f8f9fa;
     border-radius: 50%;
     border: 5px solid #f8f9fa;
@@ -72,14 +73,15 @@ nav svg:hover{
     margin-top: 0;
     margin-right: -4px;
 }
-nav{
+#header nav{
     top: 0;
 }
 #logo{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 60px;
+   max-height: 100%;
+   max-width: 100%;
+   object-fit: contain;
+   object-position: center bottom;
+   width: auto;
 }
 input{
     width: 47%;
@@ -121,4 +123,62 @@ button{
     font-size: 14.5px;
     margin: 25px 4px;
     
+}
+#footer ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+#footer li{
+    display: inline;
+}
+#footer nav a{
+    display: inline-block;
+    color: #70757a;
+    padding: 12px 12px;
+    text-decoration: none;
+}
+#footer nav a:hover{
+    text-decoration: underline;
+}
+footer{
+    bottom: 0;
+    width: 100%;
+    background-color: #f2f2f2;
+    position: absolute;
+    right: 0;
+    left: 0;
+    display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+}
+#advertising{
+    margin-left: 1vw;
+    margin-top: .5vw;
+    float: left;
+}
+#business{
+    margin-top: .5vw;
+    float: left;
+}
+#how{
+    margin-top: .5vw;
+    float: left;
+}
+
+#settings{
+    float: right;
+    margin-top: .5vw;
+}
+#terms{
+    float: right;
+    margin-top: .5vw;
+}
+#privacy{
+    float: right;
+    margin-left: 2vw;
+    margin-top: .5vw;
+}
+#carbon{
+    margin-left: 15vw;
 }
